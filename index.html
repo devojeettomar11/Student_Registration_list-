@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple Student Registration System to manage student records.">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">Student Registration System</h1>
+        <p>Register, edit, and delete student records easily.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#registration-form">Register Student</a>
+        <a href="#student-list">Student List</a>
+    </nav>
+
+    <section id="registration-form">
+        <h2>Register New Student</h2>
+        <form id="studentForm">
+            <input type="text" id="studentName" placeholder="Full Name" required>
+            <input type="text" id="studentId" placeholder="Student ID (numbers only)" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="contactNumber" placeholder="Contact Number (min 10 digits)" required>
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <section id="student-list">
+        <h2>Registered Students</h2>
+        <div id="tableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                    <!-- Students appear here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
